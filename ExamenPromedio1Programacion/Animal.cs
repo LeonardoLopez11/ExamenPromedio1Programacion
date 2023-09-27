@@ -11,22 +11,21 @@ namespace ExamenPromedio1Programacion
         protected string Nombre;
         protected int TiempoVida;
         protected float cantidadProducto;
-        protected float semillaValor;
-        protected float productoValor;
+        protected float PrecioAnimal;
+        protected float PrecioProductoFinal;
 
-
-        public Animal(string nombre, int tiempoVida, int cantidadProducto, float semillaValor, float productoValor)
+        public Animal(string nombre, int tiempoVida, float cantidadProducto, float precioAnimal, float precioProductoFinal)
         {
-            this.Nombre = nombre;
-            this.TiempoVida = tiempoVida;
+            Nombre = nombre;
+            TiempoVida = tiempoVida;
             this.cantidadProducto = cantidadProducto;
-            this.semillaValor = semillaValor;
-            this.productoValor = productoValor;
-
+            PrecioAnimal = precioAnimal;
+            PrecioProductoFinal = precioProductoFinal;
         }
+
         public override string ToString()
         {
-            return "Nombre: " + Nombre + ", TiempoVida: " + TiempoVida + " Cantidad de Productos: " + cantidadProducto + " valor de la semilla: " + semillaValor + "Valor del Producto" + productoValor;
+            return "Nombre: " + Nombre + ", TiempoVida: " + TiempoVida + " Cantidad de Productos: " + cantidadProducto + " Precio del Animal: " + PrecioAnimal + "Producto Final Precio" + PrecioProductoFinal;
         }
     }
 }

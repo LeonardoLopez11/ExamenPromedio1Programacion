@@ -46,6 +46,9 @@ namespace ExamenPromedio1Programacion
                     
             }
         }
-
+        public override string ToString()
+        {
+            return "Nombre: " + Nombre + ", TiempoVida: " + TiempoVida + " Cantidad de Productos: " + CantidadProducto + " valor de la semilla: " + semillaValor + "Valor del Producto" + productoValor;
+        }
     }
 }

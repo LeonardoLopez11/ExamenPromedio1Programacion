@@ -62,9 +62,9 @@ namespace ExamenPromedio1Programacion
                         }
                     case "2":
                         {
-                            foreach (var ANIMALES in todosanimales)
+                            foreach (var objetos in todosanimales)
                             {
-                                Console.WriteLine(ANIMALES.ToString());
+                                Console.WriteLine(objetos.ToString());
                                 
                             }
 
@@ -73,7 +73,39 @@ namespace ExamenPromedio1Programacion
                         }
                     case "3":
                         {
+                            foreach (var objetos in todosanimales)
+                            {
+                                Console.WriteLine(objetos.ToString());
+
+                            }
+
                             break;
+                        }
+                       
+                            case "4":
+                        {
+                            break;
+
+                        }
+                    case "5":
+                        {
+
+                            break;
+
+                        }
+                    case "6":
+                        {
+                            break;
+
+                        }
+                    case "7":
+                        {
+                            break;
+
+                        }
+                    
+                        {
+
                         }
 
 
