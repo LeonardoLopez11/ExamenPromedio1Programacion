@@ -10,9 +10,9 @@ namespace ExamenPromedio1Programacion
     {
         private List<Animal> todosanimales = new List<Animal>();
         private List<Plantas> todasplantas = new List<Plantas>();
-       
+        
 
-       
+
 
 
         static void Main(string[] args)
@@ -22,6 +22,8 @@ namespace ExamenPromedio1Programacion
 
             List<Animal> todosanimales = new List<Animal>();
             List<Plantas> todasplantas = new List<Plantas>();
+            List<Animal> animales = new List<Animal>();
+            List<Plantas> plantas = new List<Plantas>();
             Animal Cerdo = new Animal("Cerdo", 50, 500, 10, 100);
             Animal Vaca = new Animal("Vaca", 50, 300, 20, 200);
             Plantas Girasol = new Plantas("Giraso", 10, 100, 500, 200);
@@ -56,6 +58,7 @@ namespace ExamenPromedio1Programacion
                         {
                             dinero = dinero - granja.GetPrecioExpansion();
                             granja.ExpandirGranja();
+                            Console.WriteLine("Has expandido la granja");
                             
 
                             break;
@@ -65,7 +68,21 @@ namespace ExamenPromedio1Programacion
                             foreach (var objetos in todosanimales)
                             {
                                 Console.WriteLine(objetos.ToString());
-                                
+                                Console.WriteLine("Nombre del animal que quieres comprar");
+                                string option2 = Console.ReadLine();
+                                switch (option2)
+                                {
+                                    case "Cerdo":
+                                        {
+                                            animales.Add(Cerdo);
+                                            break;
+                                        }
+                                    case "Vaca":
+                                        {
+                                            animales.Add(Vaca);
+                                            break;
+                                        }
+                                }
                             }
 
 
@@ -73,10 +90,24 @@ namespace ExamenPromedio1Programacion
                         }
                     case "3":
                         {
-                            foreach (var objetos in todosanimales)
+                            foreach (var objetos in todasplantas)
                             {
                                 Console.WriteLine(objetos.ToString());
-
+                                Console.WriteLine("Nombre de la planta que quieres comprar");
+                                string option3 = Console.ReadLine();
+                                switch (option3)
+                                {
+                                    case "Girasol":
+                                        {
+                                            plantas.Add(Girasol);
+                                            break;
+                                        }
+                                    case "Girasol1":
+                                        {
+                                            plantas.Add(Girasol2);
+                                            break;
+                                        }
+                                }
                             }
 
                             break;
@@ -84,6 +115,7 @@ namespace ExamenPromedio1Programacion
                        
                             case "4":
                         {
+
                             break;
 
                         }
