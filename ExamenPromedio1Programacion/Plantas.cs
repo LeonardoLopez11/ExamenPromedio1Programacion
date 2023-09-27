@@ -25,7 +25,7 @@ namespace ExamenPromedio1Programacion
 
         }
 
-        public void CosecharPlanta()
+        public virtual void CosecharPlanta()
         {
             if(CrecimientoPlanta <= 1)
             {
@@ -50,5 +50,11 @@ namespace ExamenPromedio1Programacion
         {
             return "Nombre: " + Nombre + ", TiempoVida: " + TiempoVida + " Cantidad de Productos: " + CantidadProducto + " valor de la semilla: " + SemillaValor + "Valor del Producto" + ProductoValor;
         }
+
+        public float GetCosecharPlanta()
+        {
+            return CrecimientoPlanta;
+        }
+
     }
 }
