@@ -51,9 +51,9 @@ namespace ExamenPromedio1Programacion
                 Console.WriteLine("2. Comprar Animales");
                 Console.WriteLine("3. Comprar Plantas");
                 Console.WriteLine("4. Pasar turno");
-                Console.WriteLine("5. Ver productos");
-                Console.WriteLine("6. Ver mis plantas");
-                Console.WriteLine("7. Ver mis animales");
+                Console.WriteLine("5. Ver mis plantas");
+                Console.WriteLine("6. Ver mis animales");
+                Console.WriteLine("7. Ver mis Productos");
                 string option = Console.ReadLine();
                 switch (option)
                 {
@@ -127,9 +127,9 @@ namespace ExamenPromedio1Programacion
                             Console.WriteLine("Has pasado turno");
                             foreach (var objetos in plantas)
                             {
-                                Console.WriteLine(objetos.ToString());
-                                Console.WriteLine("El crecimiento de las plantas"+  planta.GetCosecharPlanta());
                                 
+                                Console.WriteLine("El crecimiento de las plantas"+  planta.GetCosecharPlanta());
+                                Console.WriteLine("No hay animales que matar o recolectar");
 
 
                             }
@@ -138,23 +138,25 @@ namespace ExamenPromedio1Programacion
                         }
                     case "5":
                         {
-
-                            break;
+                            foreach (var objetos in plantas)
+                            {
+                                Console.WriteLine(objetos.ToString());
+                            }
+                                break;
 
                         }
                     case "6":
                         {
-                            break;
+                            foreach (var objetos in animales)
+                            {
+                                Console.WriteLine(objetos.ToString());
+                            }
+                                break;
 
                         }
                     case "7":
                         {
                             break;
-
-                        }
-                    
-                        {
-
                         }
 
 
