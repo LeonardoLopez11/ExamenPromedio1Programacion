@@ -17,6 +17,13 @@ namespace ExamenPromedio1Programacion
         {
             PrecioExpansion = PrecioExpansion + 10;
             Console.WriteLine("Se ha completado la compra");
+            
         }
+        public int GetPrecioExpansion()
+        {
+            return PrecioExpansion;
+        }
+
+
     }
 }

@@ -17,6 +17,9 @@ namespace ExamenPromedio1Programacion
 
         static void Main(string[] args)
         {
+            Granja granja = new Granja();
+            granja.ExpandirGranja();
+
             List<Animal> todosanimales = new List<Animal>();
             List<Plantas> todasplantas = new List<Plantas>();
             Animal Cerdo = new Animal("Cerdo", 50, 500, 10, 100);
@@ -27,6 +30,10 @@ namespace ExamenPromedio1Programacion
             todosanimales.Add(Vaca);
             todasplantas.Add(Girasol);
             todasplantas.Add(Girasol2);
+            
+
+
+
             bool continueFlag = true;
             while (continueFlag)
             {
@@ -47,11 +54,21 @@ namespace ExamenPromedio1Programacion
                 {
                     case "1":
                         {
+                            dinero = dinero - granja.GetPrecioExpansion();
+                            granja.ExpandirGranja();
+                            
 
                             break;
                         }
                     case "2":
                         {
+                            foreach (var ANIMALES in todosanimales)
+                            {
+                                Console.WriteLine(ANIMALES.ToString());
+                                
+                            }
+
+
                             break;
                         }
                     case "3":

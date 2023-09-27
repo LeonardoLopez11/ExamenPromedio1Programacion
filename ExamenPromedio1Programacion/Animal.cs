@@ -24,5 +24,9 @@ namespace ExamenPromedio1Programacion
             this.productoValor = productoValor;
 
         }
+        public override string ToString()
+        {
+            return "Nombre: " + Nombre + ", TiempoVida: " + TiempoVida + " Cantidad de Productos: " + cantidadProducto + " valor de la semilla: " + semillaValor + "Valor del Producto" + productoValor;
+        }
     }
 }

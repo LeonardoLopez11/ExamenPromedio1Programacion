@@ -19,15 +19,15 @@ namespace ExamenPromedio1Programacion
         {
             this.Nombre = nombre;
             this.TiempoVida = tiempoVida;
-            this.CantidadProducto = cantidadProducto;
-            this.SemillaValor = semillaValor;
+           this.CantidadProducto = cantidadProducto;
+           this.SemillaValor = semillaValor;
             this.ProductoValor = productoValor;
 
         }
 
         public void CosecharPlanta()
         {
-            if (CrecimientoPlanta <= 1)
+            if(CrecimientoPlanta <= 1)
             {
                 Console.WriteLine("Has cosechado la planta demasiado pronto, no has obtenido su producto");
             }
@@ -42,9 +42,10 @@ namespace ExamenPromedio1Programacion
             else
             {
 
-                Console.WriteLine("Has cosechado la planta demasiado tarde, tanto que sus productos se han podrido")
-                    ;
+                Console.WriteLine("Has cosechado la planta demasiado tarde, tanto que sus productos se han podrido");
+                    
             }
         }
+
     }
 }
