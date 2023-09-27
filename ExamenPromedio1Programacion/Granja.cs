@@ -10,8 +10,8 @@ namespace ExamenPromedio1Programacion
     {
         private int PrecioExpansion;
         List<Animal> animales = new List<Animal>();
-        Animal Cerdo = new Animal("CERDO", 500, 50, 10, 50);
-        Animal Vaca = new Animal("VACA", 500, 100, 15, 10);
+        List<Plantas> plantas = new List<Plantas>();
+        
 
         public void ExpandirGranja()
         {
